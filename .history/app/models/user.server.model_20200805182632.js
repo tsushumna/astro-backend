@@ -1,0 +1,16 @@
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
+var UserSchema = new Schema({
+    username: {
+        type: String,
+        trim: true,
+        default: '',
+    },
+    description: {
+        type: String,
+        trim: true,
+        default: ''
+    }
+});
+UserSchema.set('versionKey', 'userVersionKey');
+mongoose.model('User', UserSchema);

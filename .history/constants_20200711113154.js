@@ -1,0 +1,1 @@
+module.exports.planetNames = ['SUN','MOON','MERCURY','VENUS']
